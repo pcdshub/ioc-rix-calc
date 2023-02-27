@@ -1,0 +1,3 @@
+[submodule "rixcalc"]
+	path = rixcalc
+	url = https://github.com/wwright-slac/rixcalc

@@ -1,7 +1,8 @@
 ioc-rix-calc IOC Startup Scripts
 =====================================================
 
- This is a caproto based IOC for the purpose of performing python based calculation, and converting the outputs to usable PVs.
+Startup script for the ioc-rix-calc IOC, based on the source code of https://github.com/wwright-slac/rixcalc
+Any future changes to the calculator should be made to rixcalc, not this repository. This startup script was generated from https://github.com/pcdshub/cookiecutter-caproto-ioc-startup
 
 config.sh
 ---------

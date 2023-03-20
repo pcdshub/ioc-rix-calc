@@ -4,14 +4,16 @@
 #   create a conda environment in this directory named "conda_env".
 #   This should be run *after* config.sh has been customized.
 
+source /reg/g/pcds/pyps/conda/pcds_conda ""
+
 . config.sh
 
 git submodule update --init --recursive
 
-set -e
-
 # Run conda bash hooks to ensure that conda activate will work:
 eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
+
+set -e
 
 # Create the new environment with the configured Python version
 conda create --yes --prefix "$PWD/conda_env" python=${PYTHON_VERSION}
